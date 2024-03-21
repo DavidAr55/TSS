@@ -1,0 +1,1133 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>55c6e5e6-c30d-435c-a4e5-ef6c4678a243</ProjectGuid>
+    <ProjectTypeGuids>{96E2B04D-8817-42c6-938A-82C39BA4D311};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <XnaFrameworkVersion>v2.0</XnaFrameworkVersion>
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <XnaPlatform>Windows</XnaPlatform>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.EffectImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.FBXImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.TextureImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Content.Pipeline.XImporter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=6d5c3888ef60e27d, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Menu\aceptar.png">
+      <Name>aceptar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Attac2_Der.png">
+      <Name>Anaya_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Attac2_Izq.png">
+      <Name>Anaya_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Der.png">
+      <Name>Anaya_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Izq.png">
+      <Name>Anaya_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Jump_Der.png">
+      <Name>Anaya_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Jump_Izq.png">
+      <Name>Anaya_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\disparo.png">
+      <Name>disparo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Anaya.png">
+      <Name>boton_Anaya</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Canes.png">
+      <Name>boton_Canes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Castruita.png">
+      <Name>boton_Castruita</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Guillen.png">
+      <Name>boton_Guillen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Quiroz.png">
+      <Name>boton_Quiroz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_Zamarripa.png">
+      <Name>boton_Zamarripa</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\cancelar.png">
+      <Name>cancelar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\creditos.png">
+      <Name>creditos</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\FondoSweetVictory.png">
+      <Name>FondoSweetVictory</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\FondoTorneo.png">
+      <Name>FondoTorneo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\PlataformaM1.png">
+      <Name>PlataformaM1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\PlataformaM2.png">
+      <Name>PlataformaM2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esc_volver.png">
+      <Name>Esc_volver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esenario1.png">
+      <Name>Esenario1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esenario2.png">
+      <Name>Esenario2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esenario3.png">
+      <Name>Esenario3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esenario4.png">
+      <Name>Esenario4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Esenario5.png">
+      <Name>Esenario5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\EsenarioRND.png">
+      <Name>EsenarioRND</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\flecha1.png">
+      <Name>flecha1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\flecha2.png">
+      <Name>flecha2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Menu1.png">
+      <Name>Menu1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Menu2.png">
+      <Name>Menu2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Menu3.png">
+      <Name>Menu3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\Menu5_Pausa.png">
+      <Name>Menu5_Pausa</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\plataforma.png">
+      <Name>plataforma</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\play.png">
+      <Name>play</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Disparo_Der.png">
+      <Name>Disparo_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Disparo_Izq.png">
+      <Name>Disparo_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Attac1_Der.png">
+      <Name>Quiroz_Attac1_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Attac1_Izq.png">
+      <Name>Quiroz_Attac1_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Attac2_Der.png">
+      <Name>Quiroz_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Attac2_Izq.png">
+      <Name>Quiroz_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Der.png">
+      <Name>Quiroz_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Izq.png">
+      <Name>Quiroz_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Jump_Der.png">
+      <Name>Quiroz_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Jump_Izq.png">
+      <Name>Quiroz_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Der1.png">
+      <Name>Quiroz_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Der2.png">
+      <Name>Quiroz_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Der3.png">
+      <Name>Quiroz_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Izq1.png">
+      <Name>Quiroz_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Izq2.png">
+      <Name>Quiroz_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Run_Izq3.png">
+      <Name>Quiroz_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\salir.png">
+      <Name>salir</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\tutorial.png">
+      <Name>tutorial</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\volver.png">
+      <Name>volver</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Baston_Der.png">
+      <Name>Baston_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Baston_Izq.png">
+      <Name>Baston_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\GanchoDer.png">
+      <Name>GanchoDer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\GanchoIzq.png">
+      <Name>GanchoIzq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Attac2_Der.png">
+      <Name>Zama_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Attac2_Izq.png">
+      <Name>Zama_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Der.png">
+      <Name>Zama_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Izq.png">
+      <Name>Zama_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Jump_Der.png">
+      <Name>Zama_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Jump_Izq.png">
+      <Name>Zama_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Der1.png">
+      <Name>Zama_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Der2.png">
+      <Name>Zama_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Der3.png">
+      <Name>Zama_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Izq1.png">
+      <Name>Zama_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Izq2.png">
+      <Name>Zama_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Run_Izq3.png">
+      <Name>Zama_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="sound\sonido.xap">
+      <Name>sonido</Name>
+      <Importer>XactImporter</Importer>
+      <Processor>XactProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont1.spritefont">
+      <Name>SpriteFont1</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Escenarios\FondoFuego.png">
+      <Name>FondoFuego</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\FondoCity.png">
+      <Name>FondoCity</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Escenarios\PlataformaM3.png">
+      <Name>PlataformaM3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\PlataformaM4.png">
+      <Name>PlataformaM4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\InGame\Barra_J1_Anaya.png">
+      <Name>Barra_J1_Anaya</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J1_Canes.png">
+      <Name>Barra_J1_Canes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J1_Castru.png">
+      <Name>Barra_J1_Castru</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J1_Guillen.png">
+      <Name>Barra_J1_Guillen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J1_Quiroz.png">
+      <Name>Barra_J1_Quiroz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J1_Zama.png">
+      <Name>Barra_J1_Zama</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Anaya.png">
+      <Name>Barra_J2_Anaya</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Canes.png">
+      <Name>Barra_J2_Canes</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Castru.png">
+      <Name>Barra_J2_Castru</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Guillen.png">
+      <Name>Barra_J2_Guillen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Quiroz.png">
+      <Name>Barra_J2_Quiroz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\Barra_J2_Zama.png">
+      <Name>Barra_J2_Zama</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Anaya\Anaya_Run_Der1.png">
+      <Name>Anaya_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Run_Der2.png">
+      <Name>Anaya_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Run_Der3.png">
+      <Name>Anaya_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Run_Izq1.png">
+      <Name>Anaya_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Run_Izq2.png">
+      <Name>Anaya_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Run_Izq3.png">
+      <Name>Anaya_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Ulti_Der.png">
+      <Name>Anaya_Ulti_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Ulti_Izq.png">
+      <Name>Anaya_Ulti_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Guillen\Guillen_Der.png">
+      <Name>Guillen_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Izq.png">
+      <Name>Guillen_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Jump_Der.png">
+      <Name>Guillen_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Jump_Izq.png">
+      <Name>Guillen_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Der1.png">
+      <Name>Guillen_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Der2.png">
+      <Name>Guillen_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Der3.png">
+      <Name>Guillen_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Izq1.png">
+      <Name>Guillen_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Izq2.png">
+      <Name>Guillen_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Run_Izq3.png">
+      <Name>Guillen_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Guillen\Borrador.png">
+      <Name>Borrador</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Barras\BarraVidaAnayaj1.png">
+      <Name>BarraVidaAnayaj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaAnayaj2.png">
+      <Name>BarraVidaAnayaj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaCanesj1.png">
+      <Name>BarraVidaCanesj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaCanesj2.png">
+      <Name>BarraVidaCanesj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaCastruitaj1.png">
+      <Name>BarraVidaCastruitaj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaCastruitaj2.png">
+      <Name>BarraVidaCastruitaj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaGuillenj1.png">
+      <Name>BarraVidaGuillenj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaGuillenj2.png">
+      <Name>BarraVidaGuillenj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaQuirozj1.png">
+      <Name>BarraVidaQuirozj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaQuirozj2.png">
+      <Name>BarraVidaQuirozj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaZamarripaj1.png">
+      <Name>BarraVidaZamarripaj1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Barras\BarraVidaZamarripaj2.png">
+      <Name>BarraVidaZamarripaj2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Escenarios\Vida1.png">
+      <Name>Vida1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\Vida2.png">
+      <Name>Vida2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Castruita\Cafe.png">
+      <Name>Cafe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Der.png">
+      <Name>Castru_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Izq.png">
+      <Name>Castru_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Jump_Der.png">
+      <Name>Castru_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Jump_Izq.png">
+      <Name>Castru_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Run_Der1.png">
+      <Name>Castru_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Run_Der2.png">
+      <Name>Castru_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Run_Der3.png">
+      <Name>Castru_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Run_Izq1.png">
+      <Name>Castru_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Run_Izq2.png">
+      <Name>Castru_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Castruita\Castru_Run_Izq3.png">
+      <Name>Castru_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Escenarios\FondoLunar.png">
+      <Name>FondoLunar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Escenarios\PlataformaM5.png">
+      <Name>PlataformaM5</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Canez\Canez_Attac2_Der.png">
+      <Name>Canez_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Attac2_Izq.png">
+      <Name>Canez_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Der.png">
+      <Name>Canez_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Izq.png">
+      <Name>Canez_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Jump_Der.png">
+      <Name>Canez_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Jump_Izq.png">
+      <Name>Canez_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Der1.png">
+      <Name>Canez_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Der2.png">
+      <Name>Canez_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Der3.png">
+      <Name>Canez_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Izq1.png">
+      <Name>Canez_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Izq2.png">
+      <Name>Canez_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Izq3.png">
+      <Name>Canez_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Gema.png">
+      <Name>Gema</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Canez\Canez_Run_Der4.png">
+      <Name>Canez_Run_Der4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Run_Izq4.png">
+      <Name>Canez_Run_Izq4</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Quiroz\Quiroz_Attac3_Der.png">
+      <Name>Quiroz_Attac3_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Attac3_Izq.png">
+      <Name>Quiroz_Attac3_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Guillen\Guillen_Attac2_Der.png">
+      <Name>Guillen_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Attac2_Izq.png">
+      <Name>Guillen_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Quiroz\Quiroz_Ulti_Der.png">
+      <Name>Quiroz_Ulti_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Quiroz\Quiroz_Ulti_Izq.png">
+      <Name>Quiroz_Ulti_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Quiroz\Rayo.png">
+      <Name>Rayo</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Canez\Canez_Attac3_Der.png">
+      <Name>Canez_Attac3_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Attac3_Izq.png">
+      <Name>Canez_Attac3_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Canez\Canez_Ulti_Der.png">
+      <Name>Canez_Ulti_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Canez\Canez_Ulti_Izq.png">
+      <Name>Canez_Ulti_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Castruita\Castru_Attac2_Der.png">
+      <Name>Castru_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Attac2_Izq.png">
+      <Name>Castru_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Zamarripa\Zama_Attac1_Der.png">
+      <Name>Zama_Attac1_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Zama_Attac1_Izq.png">
+      <Name>Zama_Attac1_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Anaya\Anaya_Attac3_Der.png">
+      <Name>Anaya_Attac3_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Attac3_Izq.png">
+      <Name>Anaya_Attac3_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Guillen\Guillen_Attac1_Der.png">
+      <Name>Guillen_Attac1_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Guillen\Guillen_Attac1_Izq.png">
+      <Name>Guillen_Attac1_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Zamarripa\Ulti\Baston_Der.png">
+      <Name>Baston_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Baston_Izq.png">
+      <Name>Baston_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\GanchoDer.png">
+      <Name>GanchoDer</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\GanchoIzq.png">
+      <Name>GanchoIzq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Attac1_Der.png">
+      <Name>Zama_Attac1_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Attac1_Izq.png">
+      <Name>Zama_Attac1_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Der.png">
+      <Name>Zama_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Izq.png">
+      <Name>Zama_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Jump_Der.png">
+      <Name>Zama_Jump_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Jump_Izq.png">
+      <Name>Zama_Jump_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Der1.png">
+      <Name>Zama_Run_Der1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Der2.png">
+      <Name>Zama_Run_Der2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Der3.png">
+      <Name>Zama_Run_Der3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Izq1.png">
+      <Name>Zama_Run_Izq1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Izq2.png">
+      <Name>Zama_Run_Izq2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Run_Izq3.png">
+      <Name>Zama_Run_Izq3</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Attac2_Der.png">
+      <Name>Zama_Attac2_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Zamarripa\Ulti\Zama_Attac2_Izq.png">
+      <Name>Zama_Attac2_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SpriteFont2.spritefont">
+      <Name>SpriteFont2</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\InGame\PantallaWinAnaya.png">
+      <Name>PantallaWinAnaya</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\PantallaWinCastruita.png">
+      <Name>PantallaWinCastruita</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\PantallaWinCanez.png">
+      <Name>PantallaWinCanez</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\PantallaWinGuillen.png">
+      <Name>PantallaWinGuillen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\PantallaWinQuiroz.png">
+      <Name>PantallaWinQuiroz</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\InGame\PantallaWinZamarripa.png">
+      <Name>PantallaWinZamarripa</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Menu\boton_menu.png">
+      <Name>boton_menu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_reiniciar.png">
+      <Name>boton_reiniciar</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Menu\boton_volver2.png">
+      <Name>boton_volver2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Anaya\Anaya_Attac1_Der.png">
+      <Name>Anaya_Attac1_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Anaya\Anaya_Attac1_Izq.png">
+      <Name>Anaya_Attac1_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Anaya\Rayos1.png">
+      <Name>Rayos1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Guillen\reloj.png">
+      <Name>reloj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Castruita\Castru_Ulti_Der.png">
+      <Name>Castru_Ulti_Der</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\Castru_Ulti_Izq.png">
+      <Name>Castru_Ulti_Izq</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="img\Castruita\GranoCafe.png">
+      <Name>GranoCafe</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="img\Castruita\Explocion.png">
+      <Name>Explocion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\v2.0\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

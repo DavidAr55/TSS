@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Wave Bank">Wave Bank
+{
+    Name = Wave Bank;
+    Xbox File = Xbox\Wave Bank.xwb;
+    Windows File = Win\Wave Bank.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Bank Last Revised Low = 2044309371;
+    Bank Last Revised High = 30743819;
+
+    Wave
+    {
+        Name = DjKavi_Horntail;
+        File = DjKavi_Horntail.wav;
+        Build Settings Last Modified Low = 2440534369;
+        Build Settings Last Modified High = 30741723;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 144;
+            Play Region Length = 37969964;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 998234101;
+            Last Modified High = 30740355;
+        }
+    }
+
+    Wave
+    {
+        Name = Rayo Efecto;
+        File = Rayo Efecto.wav;
+        Build Settings Last Modified Low = 77044032;
+        Build Settings Last Modified High = 30743628;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 148;
+            Play Region Length = 529200;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 3447880514;
+            Last Modified High = 30743627;
+        }
+    }
+
+    Wave
+    {
+        Name = Ulti_Anaya;
+        File = Ulti_Anaya.wav;
+        Build Settings Last Modified Low = 1801144911;
+        Build Settings Last Modified High = 30743630;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 122;
+            Play Region Length = 705600;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 487631760;
+            Last Modified High = 30743630;
+        }
+    }
+
+    Wave
+    {
+        Name = Yo_soy_inevitable;
+        File = Yo_soy_inevitable.wav;
+        Build Settings Last Modified Low = 1988487827;
+        Build Settings Last Modified High = 30743796;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 112;
+            Play Region Length = 882000;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 155549760;
+            Last Modified High = 30743796;
+        }
+    }
+
+    Wave
+    {
+        Name = Explocion;
+        File = Explocion.WAV;
+        Build Settings Last Modified Low = 2011499291;
+        Build Settings Last Modified High = 30743819;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 1;
+            Sampling Rate = 11025;
+            Bits Per Sample = 0;
+            Play Region Offset = 44;
+            Play Region Length = 26967;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1880291990;
+            Last Modified High = 30729420;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>

@@ -1,0 +1,4 @@
+C:\Users\david.LAPTOP-MVAH6FH2\Desktop\Teachers_Strike_Simulator\Teachers_Strike_Simulator\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\david.LAPTOP-MVAH6FH2\Desktop\Teachers_Strike_Simulator\Teachers_Strike_Simulator\Content\obj\x86\Debug\sound\sonido.xml
+C:\Users\Bread\Downloads\Teachers_Strike_Simulator\Teachers_Strike_Simulator\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bread\Downloads\Teachers_Strike_Simulator\Teachers_Strike_Simulator\Content\obj\x86\Debug\sound\sonido.xml
